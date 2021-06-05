@@ -1,0 +1,10 @@
+---
+
+- name: Install docker 
+  hosts: all
+  remote_user: fireking
+  become: yes
+
+  roles:
+    - docker
+...
