@@ -1,0 +1,25 @@
+---
+
+- name: Update all packages
+  apt:
+    name: '*'
+    update_cache: yes
+    state: latest
+
+- name: Upgrade all packages
+  apt:
+    upgrade: full
+
+- name: Autoremove unused packages
+  apt:
+    autoremove: yes
+
+- name: Install python3-pip
+  apt:
+    name:
+      - python3-pip
+    state: latest  
+
+- name: Run a snap refresh
+  shell: snap refresh
+... 

@@ -1,0 +1,10 @@
+---
+
+- name: Update and upgrade all packages 
+  hosts: all
+  remote_user: fireking
+  become: yes
+
+  roles:
+    - update
+...
