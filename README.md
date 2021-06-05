@@ -1,2 +1,2 @@
-# automation
-This is an ansible repository to help with some basics tasks I want to have automated
+# Ansible
+This is a repository for all of my ansible playbooks
